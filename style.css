@@ -36,7 +36,9 @@ h3 {
   color: #bc6c25;
 }
 article#skills {
-  background: #fff;
+  background: #fefae0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .skill-img {
   display: flex;
@@ -49,11 +51,12 @@ article#skills {
 .skill-img li {
   font-size: 80px;
   list-style: none;
-  opacity: 0.1;
+  color: #bc6c25;
+  /* opacity: 0.1; */
 }
 .featured-image {
   width: 100%;
-  max-height: 300px;
+  max-height: 500px;
   object-fit: cover;
   object-position: center;
 }
@@ -123,6 +126,9 @@ aside {
   }
   #menu-icon {
     display: block;
+  }
+  #about{
+    margin-bottom: 20px;
   }
   .navlist-ul-link {
     position: absolute;
