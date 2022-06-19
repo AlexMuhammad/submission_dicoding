@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  background: #fff;
+}
+main {
+  padding: 20px;
+  overflow: hidden;
+}
+#content {
+  float: left;
+  width: 75%;
+}
+.jumbotron {
+  font-size: 30px;
+  padding: 60px;
+  background-color: #bc6c25;
+  text-align: center;
+  color: #ffff;
+}
+header {
+  display: inline;
+}
+
+h2 {
+  color: #bc6c25;
+}
+
+h3 {
+  color: #bc6c25;
+}
+article#skills {
+  background: #fff;
+}
+.skill-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+.skill-img li {
+  font-size: 80px;
+  list-style: none;
+  opacity: 0.1;
+}
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dda15e;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 2rem;
+  color: #ffff;
+}
+nav a:hover {
+  font-weight: bold;
+}
+#menu-icon {
+  color: #fff;
+  font-size: 30px;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+
+.profile header {
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #bc6c25;
+  text-align: center;
+  font-weight: bold;
+}
+aside {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+.profile img {
+  width: 200px;
+}
+.card {
+  background: #fefae0;
+  padding: 20px;
+}
+@media screen and (max-width: 960px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+  #menu-icon {
+    display: block;
+  }
+  .navlist-ul-link {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #FEFAE0;
+    top: 70px;
+    right: 100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  .navlist-ul-link a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #000;
+    font-size: 30px;
+  }
+  .navlist-ul-link.active {
+    right: 0;
+  }
+}
